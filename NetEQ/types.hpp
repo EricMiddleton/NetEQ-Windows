@@ -4,17 +4,18 @@
 #include <functional>
 
 namespace DSP {
-  enum class Channel {
-    Right = 0,
-    Left = 1
-  };
+	enum class Channel {
+		Right = 0,
+		Left = 1
+	};
 
-  enum class StereoMode {
-    Mono = 0,
-    Stereo = 1
-  };
+	enum class StereoMode {
+		Mono = 0,
+		Stereo = 1
+	};
 
-  using SampleBuffer = std::vector<int16_t>;
-  using AudioCallback = std::function<void(const SampleBuffer&,
-    const SampleBuffer&)>;
+	using SampleBuffer = std::vector<int16_t>;
+	//using AudioCallback = std::function<void(const SampleBuffer&,
+	  //const SampleBuffer&)>;
+	using AudioCallback = std::function<void(const std::vector<SampleBuffer>& buffers)>;
 }

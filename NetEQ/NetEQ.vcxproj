@@ -80,6 +80,7 @@
     <ClCompile Include="loopback-capture.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="prefs.cpp" />
+    <ClCompile Include="RAIIWrapper.cpp" />
     <ClCompile Include="SignalChain.cpp" />
     <ClCompile Include="WASAPIOutput.cpp" />
   </ItemGroup>
@@ -92,6 +93,7 @@
     <ClInclude Include="log.h" />
     <ClInclude Include="loopback-capture.h" />
     <ClInclude Include="prefs.h" />
+    <ClInclude Include="RAIIWrapper.hpp" />
     <ClInclude Include="SignalChain.hpp" />
     <ClInclude Include="types.hpp" />
     <ClInclude Include="utility.hpp" />
